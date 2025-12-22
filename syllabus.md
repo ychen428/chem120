@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 🏠 Syllabus
+title: 📜 Syllabus
 permalink: /syllabus
 description: >-
     Course policies and information.
