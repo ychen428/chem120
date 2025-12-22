@@ -30,8 +30,12 @@ permalink: pretty
 aux_links:
   Kevin Lin:
     - 'https://kevinl.info'
-footer_content:
+# footer_content:
 
+just_the_docs:
+  custom_css:
+    - assets/css/nord.css
+    
 # Collections for website data
 collections:
   staffers:
