@@ -17,13 +17,10 @@ description: >-
 ---
 
 ## About
-Test Page
 
 ## Lecture
 
-
 ## Resources
-
 
 ## Assignments
 

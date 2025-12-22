@@ -22,45 +22,43 @@ schedule:
   - name: Monday
     events:
       - name: Lecture
-        start: 9:30 AM
-        end: 10:30 AM
-        location: 150 Wheeler
-      - name: Section
-        start: 11:30 AM
-        end: 12:30 PM
-        location: 310 Soda
+        start: 9:00 AM
+        end: 10:00 AM
+        location: SCCT G042
       - name: Office Hours
-        start: 12:30 PM
-        end: 2:00 PM
-        location: 271 Soda
+        start: 4:00 PM
+        end: 5:00 PM
+        location: SCCT G1063
   - name: Tuesday
+    events:
+      - name: Office Hours
+        start: 4:00 PM
+        end: 5:00 PM
+        location: SCCT G1063
   - name: Wednesday
     events:
       - name: Lecture
-        start: 9:30 AM
-        end: 10:30 AM
-        location: 150 Wheeler
-      - name: Section
-        start: 11:30 AM
-        end: 12:30 PM
-        location: 310 Soda
+        start: 9:00 AM
+        end: 10:00 AM
+        location: SCCT G042
       - name: Office Hours
-        start: 12:30 PM
-        end: 2:00 PM
-        location: 271 Soda
+        start: 3:00 PM
+        end: 5:00 PM
+        location: SCCT G1063
   - name: Thursday
+    events:
+      - name: Office Hours
+        start: 10:00 AM
+        end: 12:00 PM
+        location: SCCT G1063
   - name: Friday
     events:
       - name: Lecture
-        start: 9:30 AM
-        end: 10:30 AM
-        location: 150 Wheeler
-      - name: Section
-        start: 11:30 AM
-        end: 12:30 PM
-        location: 310 Soda
+        start: 9:00 AM
+        end: 10:00 AM
+        location: SCCT G042
       - name: Office Hours
-        start: 12:30 PM
-        end: 2:00 PM
-        location: 271 Soda
+        start: 4:00 PM
+        end: 5:00 PM
+        location: SCCT G1063
 ---
