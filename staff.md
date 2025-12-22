@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Course Staff
+title: 👥 Course Staff
 description: A listing of all the course staff members.
 ---
 

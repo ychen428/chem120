@@ -93,7 +93,36 @@ summary:hover {
   color: #2E3440;
 }
 
+/* Remove extra gaps/padding that create white space */
+.site-header,
+.aux-nav-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Aux nav itself (reinforce styling) */
+.aux-nav {
+  background-color: #ECEFF4 !important;
+  color: #2E3440 !important;
+  height: auto !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.aux-nav .aux-nav-list {
+  background: transparent !important;
+}
+
+.aux-nav .aux-nav-list-item a {
+  color: #5E81AC !important;
+  text-decoration: none !important;
+}
+
+.aux-nav .aux-nav-list-item a:hover {
+  color: #81A1C1 !important;
+  text-decoration: underline !important;
+}
 /* Footer */
-.site-footer {
-  color: #4C566A;
+.site-footer,
+.sidebar-footer {
+  display: none !important;
 }

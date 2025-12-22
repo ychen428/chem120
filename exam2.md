@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Exam 2 Lectures
+title: 📘 Exam 2 Lectures
 description: Listing of course modules and topics.
 ---
 

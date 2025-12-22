@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Exam 3 Lectures
+title: 📘 Exam 3 Lectures
 description: Listing of course modules and topics.
 ---
 

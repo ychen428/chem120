@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Exam 4 Lectures
+title: 📘 Exam 4 Lectures
 description: Listing of course modules and topics.
 ---
 
