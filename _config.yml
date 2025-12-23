@@ -14,8 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Chem 120
-tagline: A Jekyll template for course websites
-description: A modern, highly customizable, responsive Jekyll template for course websites
+tagline: General Chemistry
+description: Chem 120 at Hamilton College
 author: Yuting Chen
 baseurl: '/chem120' # the subpath of your site, e.g. /blog
 url: 'https://ychen428.github.io' # the base hostname & protocol for your site, e.g. http://example.com
@@ -32,8 +32,6 @@ aux_links:
     - '#'
   Yuting Chen:
     - 'https://ychen428.github.io'
-  Gradescope:
-    - 'https://www.gradescope.com'
 # footer_content:
 
 just_the_docs:
@@ -44,6 +42,7 @@ just_the_docs:
 collections:
   staffers:
   modules:
+    output: true
   schedules:
   announcements:
 # Default layouts for each collection type
@@ -61,6 +60,7 @@ defaults:
       type: modules
     values:
       layout: module
+      search: true
   - scope:
       path: ''
       type: schedules

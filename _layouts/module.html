@@ -1,4 +1,16 @@
-<h2 class="fs-4" id="{{ page.title | slugify }}" >{{ page.title }}</h2>
-<div class="module">
-  {{ content }}
-</div>
+---
+layout: page
+---
+
+{% assign lecture = site.data.exam1 | where: "number", page.number | first %}
+
+<h1>{{ lecture.lecture }}</h1>
+
+<p><strong>Number:</strong> {{ lecture.number }}</p>
+<p><strong>Date:</strong> {{ lecture.date }}</p>
+
+<p><strong>Recording:</strong> <a href="{{ lecture.video }}">Watch Video</a></p>
+
+<p><strong>Slides:</strong> <a href="{{ lecture.slides_blank }}">Blank</a> / <a href="{{ lecture.slides_annotated }}">Annotated</a></p>
+
+<p><strong>Activity:</strong> <a href="{{ lecture.activity_link }}">{{ lecture.activity }}</a> / Key: <a href="{{ lecture.key_link }}">{{ lecture.activity }} Key</a></p>
