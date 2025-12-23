@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Chem 322
+title: Chem 120
 tagline: A Jekyll template for course websites
 description: A modern, highly customizable, responsive Jekyll template for course websites
 author: Yuting Chen
-baseurl: '/chem322' # the subpath of your site, e.g. /blog
+baseurl: '/chem120' # the subpath of your site, e.g. /blog
 url: 'https://ychen428.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
 
@@ -28,6 +28,8 @@ search_enabled: true
 heading_anchors: true
 permalink: pretty
 aux_links:
+  Dark Mode:
+    - '#'
   Yuting Chen:
     - 'https://ychen428.github.io'
   Gradescope:
@@ -36,7 +38,7 @@ aux_links:
 
 just_the_docs:
   custom_css:
-    - assets/css/nord.css
+  custom_scripts:
     
 # Collections for website data
 collections:

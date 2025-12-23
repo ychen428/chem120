@@ -1,1 +1,79 @@
-<link rel="stylesheet" href="{{ '/assets/css/nord.css' | relative_url }}">
+<!-- Preload dark theme so it’s ready -->
+<link
+  rel="preload"
+  href="{{ site.baseurl }}/assets/css/just-the-docs-dark.css"
+  as="style"
+>
+
+<!-- Default theme stylesheet (fallback) -->
+<link
+  id="jtdThemeCSS"
+  rel="stylesheet"
+  href="{{ site.baseurl }}/assets/css/just-the-docs-default.css"
+>
+
+<!-- <script src="{{ '/assets/js/dark-toggle.js' | relative_url }}"></script> -->
+<!-- 
+<script>
+  (function () {
+    var navList = document.querySelector('.aux-nav-list');
+    if (!navList || !navList.firstElementChild) return;
+    var darkToggle = navList.firstElementChild;
+    darkToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      toggleDark();
+    });
+  })();
+</script> -->
+
+
+<script>
+/* Persistent dark mode for Chem 120 */
+
+jtd.getTheme = function () {
+  var cssFileHref = (
+    document.getElementById('jtdThemeCSS') || document.querySelector('[rel="stylesheet"]')
+  ).getAttribute('href');
+  return cssFileHref.substring(cssFileHref.lastIndexOf('-') + 1, cssFileHref.length - 4);
+};
+
+jtd.setTheme = function (theme) {
+  var cssFile = document.getElementById('jtdThemeCSS') || document.querySelector('[rel="stylesheet"]');
+  cssFile.setAttribute('href', cssFile.getAttribute('href').replace(jtd.getTheme(), theme));
+};
+
+let toggleDark = () => {
+  let setDark = jtd.getTheme() !== 'dark';
+  document.documentElement.setAttribute('data-theme', setDark ? 'dark' : 'default');
+  jtd.setTheme(setDark ? 'dark' : 'default');
+  localStorage.setItem('darkMode', String(setDark));
+};
+
+// Apply saved preference immediately
+if (localStorage.getItem('darkMode') === 'true') {
+  toggleDark();
+}
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM fully loaded');
+
+  var navList = document.querySelector('.aux-nav-list');
+  if (!navList) {
+    console.log('No .aux-nav-list found!');
+    return;
+  }
+  console.log('.aux-nav-list found:', navList);
+
+  var darkToggle = navList.firstElementChild;
+  console.log('Dark toggle element found:', darkToggle, 'text:', darkToggle.textContent.trim());
+
+  darkToggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log('Dark Mode link clicked!');
+    toggleDark();
+  });
+});
+</script>
