@@ -12,21 +12,6 @@
   href="{{ site.baseurl }}/assets/css/just-the-docs-default.css"
 >
 
-<!-- <script src="{{ '/assets/js/dark-toggle.js' | relative_url }}"></script> -->
-<!-- 
-<script>
-  (function () {
-    var navList = document.querySelector('.aux-nav-list');
-    if (!navList || !navList.firstElementChild) return;
-    var darkToggle = navList.firstElementChild;
-    darkToggle.addEventListener('click', (e) => {
-      e.preventDefault();
-      toggleDark();
-    });
-  })();
-</script> -->
-
-
 <script>
 /* Persistent dark mode for Chem 120 */
 
@@ -49,30 +34,27 @@ let toggleDark = () => {
   localStorage.setItem('darkMode', String(setDark));
 };
 
-// Apply saved preference immediately
-if (localStorage.getItem('darkMode') === 'true') {
-  toggleDark();
-}
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('darkMode') === 'true') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    jtd.setTheme('dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'default');
+    jtd.setTheme('default');
+  }
 </script>
 
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('DOM fully loaded');
-
   var navList = document.querySelector('.aux-nav-list');
   if (!navList) {
-    console.log('No .aux-nav-list found!');
     return;
   }
-  console.log('.aux-nav-list found:', navList);
-
   var darkToggle = navList.firstElementChild;
-  console.log('Dark toggle element found:', darkToggle, 'text:', darkToggle.textContent.trim());
-
   darkToggle.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log('Dark Mode link clicked!');
     toggleDark();
   });
 });
