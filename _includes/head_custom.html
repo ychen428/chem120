@@ -34,7 +34,6 @@ let toggleDark = () => {
   localStorage.setItem('darkMode', String(setDark));
 };
 
-
 document.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem('darkMode') === 'true') {
     document.documentElement.setAttribute('data-theme', 'dark');
@@ -43,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.setAttribute('data-theme', 'default');
     jtd.setTheme('default');
   }
+});
 </script>
 
 
