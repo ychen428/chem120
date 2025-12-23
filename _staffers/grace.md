@@ -6,4 +6,4 @@ role: Teaching Assistant
 photo: grace.jpg
 ---
 
-Fourth year Chemistry Major. 
+Chemistry major (’26) and QSR tutor. Runs weekly review sessions.

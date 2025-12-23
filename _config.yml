@@ -38,7 +38,7 @@ aux_links:
 
 just_the_docs:
   custom_css:
-  custom_scripts:
+    - assets/css/custom.css
     
 # Collections for website data
 collections:

@@ -1,11 +1,11 @@
-<!-- Preload dark theme so it’s ready -->
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
 <link
   rel="preload"
   href="{{ site.baseurl }}/assets/css/just-the-docs-dark.css"
   as="style"
 >
 
-<!-- Default theme stylesheet (fallback) -->
 <link
   id="jtdThemeCSS"
   rel="stylesheet"
@@ -13,7 +13,6 @@
 >
 
 <script>
-/* Persistent dark mode for Chem 120 */
 
 jtd.getTheme = function () {
   var cssFileHref = (
