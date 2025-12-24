@@ -20,14 +20,14 @@ description: Exam 3 Lectures
       <tr>
         <td>{{ l.number }}</td>
         <td>{{ l.date }}</td>
-        <td> <a href="{{ site.baseurl }}/module/{{ l.number }}/"><strong>{{ l.lecture }}</strong></a></td>
+        <td> <a href="{{ site.baseurl }}/modules/{{ l.number }}/"><strong>{{ l.lecture }}</strong></a></td>
         <td>
           Recording: <a href="{{ l.video }}">Blackboard</a><br>
           Slides: <a href="{{ l.slides_blank }}">Blank</a> / <a href="{{ l.slides_annotated }}">Annotated</a>
         </td>
         <td>
-          Worksheet: <a href="{{ l.activity }}">{{ l.activity }}</a><br>
-          Key: <a href="{{ l.activity_key }}">{{ l.activity }} Key</a>
+          Worksheet: <a href="{{ l.activity }}">{{ "Activity " | append: l.number }}</a><br>
+          Key: <a href="{{ l.activity_key }}">{{ "Activity " | append: l.number }} Key</a>
         </td>
       </tr>
       {% endfor %}

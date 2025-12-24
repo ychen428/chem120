@@ -11,4 +11,5 @@ layout: page
 
 <p><strong>Slides:</strong> <a href="{{ lecture.slides_blank }}">Blank</a> / <a href="{{ lecture.slides_annotated }}">Annotated</a></p>
 
-<p><strong>Activity:</strong> <a href="{{ lecture.activity }}">{{ lecture.activity }}</a> / Key: <a href="{{ lecture.activity_key }}">{{ lecture.activity }} Key</a></p>
+<p><strong>Activity:</strong> <a href="{{ l.activity }}">{{ "Activity " | append: l.number }}</a><br>/ Key: <a href="{{ l.activity_key }}">{{ "Activity " | append: l.number }} Key</a>
+	
