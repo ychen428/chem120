@@ -1,6 +1,8 @@
 ---
 layout: page
 title: 📅 Weekly Schedule
+parent: 📜 Course Information
+nav_order: 4
 description: The weekly event schedule.
 ---
 

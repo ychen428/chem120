@@ -1,16 +1,41 @@
 ---
 layout: page
 ---
-{% assign lecture = site.data[page.exam] | where: "number", page.number | first %}
 
-<h1>{{ lecture.lecture }}</h1>
+{% assign lectures = site.data[page.exam] | sort: "number" %}
+{% assign current_number = page.number %}
 
-<p><strong>Date:</strong> {{ lecture.date }}</p>
+<h1>{{ page.title }}</h1>
 
-<p><strong>Recording:</strong> <a href="{{ lecture.video }}">Link</a></p>
+<p><strong>Date:</strong> {{ page.date }}</p>
 
-<p><strong>Slides:</strong> <a href="{{ lecture.slides_blank }}">Blank</a> / <a href="{{ lecture.slides_annotated }}">Annotated</a></p>
+<p><strong>Recording:</strong> <a href="{{ page.video }}">Link</a></p>
 
-<p><strong>Activity:</strong> <a href="{{ l.activity }}">{{ "Activity " | append: l.number }}</a><br>/ Key: <a href="{{ l.activity_key }}">{{ "Activity " | append: l.number }} Key</a>
+<p><strong>Slides:</strong> 
+  <a href="{{ page.slides_blank }}">Blank</a> / 
+  <a href="{{ page.slides_annotated }}">Annotated</a>
+</p>
 
-	{{ page.search_content }}
+<p><strong>Activity:</strong> 
+  <a href="{{ page.activity }}">{{ "Activity " | append: page.number }}</a><br>
+  <strong>Key:</strong> 
+  <a href="{{ page.activity_key }}">{{ "Activity " | append: page.number }} Key</a>
+</p>
+
+<div class="nav-buttons">
+  {% assign prev_number = page.number | minus: 1 %}
+  {% assign next_number = page.number | plus: 1 %}
+
+  {% comment %}
+    Assuming your module URLs follow a pattern like /modules/1, /modules/2, etc.
+    Adjust the URL pattern if your structure is different.
+  {% endcomment %}
+
+  {% if prev_number > 0 %}
+    <a href="/chem120/modules/{{ prev_number }}" class="btn">← Previous Module</a>
+  {% endif %}
+
+  {% if next_number <= lectures.size %}
+    <a href="/chem120/modules/{{ next_number }}" class="btn">Next Module →</a>
+  {% endif %}
+</div>

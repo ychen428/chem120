@@ -1,6 +1,8 @@
 ---
 layout: page
 title: 👥 Course Staff
+parent: 📜 Course Information
+nav_order: 3
 description: A listing of all the course staff members.
 ---
 

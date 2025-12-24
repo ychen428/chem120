@@ -43,6 +43,10 @@ collections:
   staffers:
   modules:
     output: true
+    search: true
+  info:
+    output: true
+    search: true
   schedules:
   announcements:
 # Default layouts for each collection type
