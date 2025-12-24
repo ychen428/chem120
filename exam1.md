@@ -1,14 +1,16 @@
 ---
 layout: page
 title: 📘 Exam 1 Lectures
-description: Listing of course modules and topics.
+description: Exam 1 Lectures
 ---
+
 <div class="lecture-table-wrapper">
   <table>
     <thead>
       <tr>
         <th>#</th>
         <th>Date</th>
+        <th>Module</th>
         <th>Lecture & Slides</th>
         <th>Activity & Key</th>
       </tr>
@@ -18,13 +20,14 @@ description: Listing of course modules and topics.
       <tr>
         <td>{{ l.number }}</td>
         <td>{{ l.date }}</td>
+        <td> <a href="{{ site.baseurl }}/module/{{ l.number }}/"><strong>{{ l.lecture }}</strong></a></td>
         <td>
-          <a href="{{ site.baseurl }}/lectures/lecture{{ l.number }}/"><strong>{{ l.lecture }}</strong></a><br>
+          Recording: <a href="{{ l.video }}">Blackboard</a><br>
           Slides: <a href="{{ l.slides_blank }}">Blank</a> / <a href="{{ l.slides_annotated }}">Annotated</a>
         </td>
         <td>
-          Worksheet: <a href="{{ l.activity_link }}">{{ l.activity }}</a> /
-          Key: <a href="{{ l.key_link }}">{{ l.activity }} Key</a>
+          Worksheet: <a href="{{ l.activity }}">{{ "Activity " | append: l.number }}</a><br>
+          Key: <a href="{{ l.activity_key }}">{{ "Activity " | append: l.number }} Key</a>
         </td>
       </tr>
       {% endfor %}
@@ -35,45 +38,50 @@ description: Listing of course modules and topics.
 
 <style>
 table {
-  table-layout: fixed; /* forces widths */
+  table-layout: fixed;
   width: 100%;
-  border-collapse: collapse; /* optional, tighter spacing */
+  border-collapse: collapse;
 }
 
 table td, table th {
-  padding: 4px 6px; /* reduce padding */
-  overflow: hidden; /* truncate content if too long */
+  padding: 4px 6px; 
+  overflow: hidden; 
   text-overflow: ellipsis;
-  white-space: nowrap; /* prevent wrapping */
+  white-space: nowrap; 
 }
 
-table td:first-child, table th:first-child { /* # column */
+table td:first-child, table th:first-child { 
   width: 5%;
 }
 
-table td:nth-child(2), table th:nth-child(2) { /* Date */
-  width: 15%;
+table td:nth-child(2), table th:nth-child(2) { 
+  width: 12%;
 }
 
-table td:nth-child(3), table th:nth-child(3) { /* Lecture */
-  width: 38%;
+table td:nth-child(3), table th:nth-child(3) {
+  width: 25%;
 }
 
-table td:nth-child(4), table th:nth-child(4) { /* Activity */
-  width: 45%;
+table td:nth-child(4), table th:nth-child(4) { 
+  width: 20%;
 }
 
-table th:first-child, table td:first-child,
-table th:nth-child(2), table td:nth-child(2) {
-  text-align: center; /* center # and Date */
+table td:nth-child(5), table th:nth-child(5) {
+  width: 20%;
 }
 
-table th:nth-child(3), table td:nth-child(3),
-table th:nth-child(4), table td:nth-child(4) {
-  text-align: left;   /* left-align Lecture and Activity */
+table th, table td {
+  text-align: center;
 }
 
-table th:nth-child(3), table th:nth-child(4) {
-  text-align: center; /* Center Lecture and Activity headers */
+table td:nth-child(4),
+table td:nth-child(5) {
+  text-align: left;
+}
+
+table td:nth-child(3), table th:nth-child(3) {
+  width: 25%;
+  white-space: normal;
+  word-wrap: break-word; 
 }
 </style>

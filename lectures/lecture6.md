@@ -1,7 +1,10 @@
 ---
 layout: module
-title: six
 number: 6
-permalink: /modules/lecture6/
+exam: exam1
+permalink: /modules/6/
 nav_exclude: true
+search: true
+search_content: >
+  Stoichiometry limiting reagents mole ratios percent yield
 ---

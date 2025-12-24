@@ -1,99 +1,89 @@
 - number: 1
-  lecture: Atomic Structure
-  date: Mon Jan 6
+  lecture: "Significant Figures, Dimensional Analysis"
+  date: Mon Sep 2
   video: link-to-video-1
-  slides_blank: link-to-blank-slides-1.pdf
-  slides_annotated: link-to-annotated-slides-1.pdf
-  activity: Activity 1
-  activity_link: link-to-activity-1.pdf
-  key_link: link-to-activity-key-1.pdf
+  slides_blank: /assets/slides/lecture_01.pdf
+  slides_annotated: /assets/slides/lecture_01_annotated.pdf
+  activity: /assets/activity/activity_01.pdf
+  activity_key: /assets/activity/activity_01_key.pdf
 
 - number: 2
-  lecture: Periodic Trends
-  date: Wed Jan 8
+  lecture: "Matter, Atoms"
+  date: Wed Sep 4
   video: link-to-video-2
-  slides_blank: link-to-blank-slides-2.pdf
-  slides_annotated: link-to-annotated-slides-2.pdf
-  activity: Activity 2
-  activity_link: link-to-activity-2.pdf
-  key_link: link-to-activity-key-2.pdf
+  slides_blank: /assets/slides/lecture_02.pdf
+  slides_annotated: /assets/slides/lecture_02_annotated.pdf
+  activity: /assets/activity/activity_02.pdf
+  activity_key: /assets/activity/activity_02_key.pdf
 
 - number: 3
-  lecture: Chemical Bonding
-  date: Fri Jan 10
+  lecture: "Mols, Waves, Blackbody"
+  date: Fri Sep 6
   video: link-to-video-3
-  slides_blank: link-to-blank-slides-3.pdf
-  slides_annotated: link-to-annotated-slides-3.pdf
-  activity: Activity 3
-  activity_link: link-to-activity-3.pdf
-  key_link: link-to-activity-key-3.pdf
+  slides_blank: /assets/slides/lecture_03.pdf
+  slides_annotated: /assets/slides/lecture_03_annotated.pdf
+  activity: /assets/activity/activity_03.pdf
+  activity_key: /assets/activity/activity_03_key.pdf
 
 - number: 4
-  lecture: Stoichiometry
-  date: Mon Jan 13
+  lecture: "Photoelectric, Bohr Model, Debroglie"
+  date: Mon Sep 9
   video: link-to-video-4
-  slides_blank: link-to-blank-slides-4.pdf
-  slides_annotated: link-to-annotated-slides-4.pdf
-  activity: Activity 4
-  activity_link: link-to-activity-4.pdf
-  key_link: link-to-activity-key-4.pdf
+  slides_blank: /assets/slides/lecture_04.pdf
+  slides_annotated: /assets/slides/lecture_04_annotated.pdf
+  activity: /assets/activity/activity_04.pdf
+  activity_key: /assets/activity/activity_04_key.pdf
 
 - number: 5
-  lecture: Thermochemistry
-  date: Wed Jan 15
+  lecture: "Quantum Numbers, Electron Configurations"
+  date: Wed Sep 11
   video: link-to-video-5
-  slides_blank: link-to-blank-slides-5.pdf
-  slides_annotated: link-to-annotated-slides-5.pdf
-  activity: Activity 5
-  activity_link: link-to-activity-5.pdf
-  key_link: link-to-activity-key-5.pdf
+  slides_blank: /assets/slides/lecture_05.pdf
+  slides_annotated: /assets/slides/lecture_05_annotated.pdf
+  activity: /assets/activity/activity_05.pdf
+  activity_key: /assets/activity/activity_05_key.pdf
 
 - number: 6
-  lecture: Kinetics
-  date: Fri Jan 17
+  lecture: "Periodic Trends"
+  date: Fri Sep 13
   video: link-to-video-6
-  slides_blank: link-to-blank-slides-6.pdf
-  slides_annotated: link-to-annotated-slides-6.pdf
-  activity: Activity 6
-  activity_link: link-to-activity-6.pdf
-  key_link: link-to-activity-key-6.pdf
+  slides_blank: /assets/slides/lecture_06.pdf
+  slides_annotated: /assets/slides/lecture_06_annotated.pdf
+  activity: /assets/activity/activity_06.pdf
+  activity_key: /assets/activity/activity_06_key.pdf
 
 - number: 7
-  lecture: Equilibrium
-  date: Mon Jan 20
+  lecture: "Chemical Bonding"
+  date: Mon Sep 16
   video: link-to-video-7
-  slides_blank: link-to-blank-slides-7.pdf
-  slides_annotated: link-to-annotated-slides-7.pdf
-  activity: Activity 7
-  activity_link: link-to-activity-7.pdf
-  key_link: link-to-activity-key-7.pdf
+  slides_blank: /assets/slides/lecture_07.pdf
+  slides_annotated: /assets/slides/lecture_07_annotated.pdf
+  activity: /assets/activity/activity_07.pdf
+  activity_key: /assets/activity/activity_07_key.pdf
 
 - number: 8
-  lecture: Acids and Bases
-  date: Wed Jan 22
+  lecture: "Lewis Structure"
+  date: Wed Sep 18
   video: link-to-video-8
-  slides_blank: link-to-blank-slides-8.pdf
-  slides_annotated: link-to-annotated-slides-8.pdf
-  activity: Activity 8
-  activity_link: link-to-activity-8.pdf
-  key_link: link-to-activity-key-8.pdf
+  slides_blank: /assets/slides/lecture_08.pdf
+  slides_annotated: /assets/slides/lecture_08_annotated.pdf
+  activity: /assets/activity/activity_08.pdf
+  activity_key: /assets/activity/activity_08_key.pdf
 
 - number: 9
-  lecture: Solubility and Precipitation
-  date: Fri Jan 24
+  lecture: "Lewis Structure Exceptions"
+  date: Fri Sep 20
   video: link-to-video-9
-  slides_blank: link-to-blank-slides-9.pdf
-  slides_annotated: link-to-annotated-slides-9.pdf
-  activity: Activity 9
-  activity_link: link-to-activity-9.pdf
-  key_link: link-to-activity-key-9.pdf
+  slides_blank: /assets/slides/lecture_09.pdf
+  slides_annotated: /assets/slides/lecture_09_annotated.pdf
+  activity: /assets/activity/activity_09.pdf
+  activity_key: /assets/activity/activity_09_key.pdf
 
 - number: 10
-  lecture: Redox Reactions
-  date: Mon Jan 27
+  lecture: "VSEPR"
+  date: Mon Sep 23
   video: link-to-video-10
-  slides_blank: link-to-blank-slides-10.pdf
-  slides_annotated: link-to-annotated-slides-10.pdf
-  activity: Activity 10
-  activity_link: link-to-activity-10.pdf
-  key_link: link-to-activity-key-10.pdf
+  slides_blank: /assets/slides/lecture_10.pdf
+  slides_annotated: /assets/slides/lecture_10_annotated.pdf
+  activity: /assets/activity/activity_10.pdf
+  activity_key: /assets/activity/activity_10_key.pdf
